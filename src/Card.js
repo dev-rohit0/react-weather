@@ -20,7 +20,7 @@ function Card() {
   const [sunset, setSunset] = useState('')
   const [humidity, setHumidity] = useState()
   const [wind, setWind] = useState()
-  const [url, setUrl] = useState('http://api.weatherapi.com/v1/forecast.json?key=630572f84f16422c95165110221606&q=Chirawa&days=1&aqi=yes&alerts=no')
+  const [url, setUrl] = useState('https://api.weatherapi.com/v1/forecast.json?key=630572f84f16422c95165110221606&q=Chirawa&days=1&aqi=yes&alerts=no')
   const [city, setCity] = useState('')
   const [forecast, setForecast] = useState([])
 
@@ -48,7 +48,7 @@ function Card() {
 
   }, [url])
   function handleClick() {
-    setUrl(`http://api.weatherapi.com/v1/forecast.json?key=630572f84f16422c95165110221606&q=${city}&days=1&aqi=yes&alerts=no`)
+    setUrl(`https://api.weatherapi.com/v1/forecast.json?key=630572f84f16422c95165110221606&q=${city}&days=1&aqi=yes&alerts=no`)
   }
 
 
